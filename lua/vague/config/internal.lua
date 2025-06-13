@@ -5,6 +5,10 @@ local DEFAULT_SETTINGS = {
 
   ---@type boolean
   transparent = false,
+  ---@type boolean
+  bold = true,
+  ---@type boolean
+  italic = true,
   ---@class VagueColorscheme.InternalConfig.style
   style = {
     ---@type string
@@ -76,6 +80,8 @@ local DEFAULT_SETTINGS = {
       diagnostic_hint = "none",
       ---@type string
       diagnostic_info = "italic",
+      ---@type string
+      diagnostic_ok = "none",
       ---@type string
       diagnostic_warn = "bold",
     },

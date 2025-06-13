@@ -20,6 +20,9 @@
 ```lua
 require("vague").setup({
   transparent = false, -- don't set background
+  -- disable bold/italic globally in `style`
+  bold = true,
+  italic = true,
   style = {
     -- "none" is the same thing as default. But "italic" and "bold" are also valid options
     boolean = "bold",
@@ -61,6 +64,7 @@ require("vague").setup({
       diagnostic_error = "bold",
       diagnostic_hint = "none",
       diagnostic_info = "italic",
+      diagnostic_ok = "none",
       diagnostic_warn = "bold",
     },
     neotest = {
